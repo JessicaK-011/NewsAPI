@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root{
+    --primary-text-color: #000000;
+    --secondary-text-color:#90aee4;
+    --accent-color:#6284c4;
+}
+body{
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color:var(--primary-text-color);
+}
+p{
+    font-family: "Poppins", sans-serif;
+    color:var(--primary-text-color);
+    line-height: 1.4rem;
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+.flex{
+    display: flex;
+    align-items: center;
+}
+.container{
+    max-width:1300px;
+    margin-inline: auto;
+    overflow: hidden;
+}
+nav{
+    background-color: azure;
+    box-shadow: 0 0 4px #c6c6c6 ;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 99;
+}
+.main-nav{
+    justify-content: space-between;
+    padding: 8px 0;
+}
+.companyLogo .image-cont{
+    height: 100px;
+    width: 100px;
+    overflow: hidden;
+}
+.image-cont img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.nav-links ul{
+    gap: 16px;
+}
+.hover-link{
+    cursor: pointer;
+}
+.hover-link:hover{
+    color:var(--secondary-text-color);
+}
+.hover-link:active{
+    color:rgb(62, 4, 62);
+}
+.search-bar{
+    height: 32px;
+    gap: 8px;
+}
+.newsInput{
+    width: 200px;
+    height: 100%;
+    padding-inline: 12px;
+    border-radius: 4px;
+    border: 2px solid #90aee4;
+    font-family: "Poppins", sans-serif;
+}
+.search-button{
+    background-color:#90aee4;
+    color: rgb(0, 0, 0);
+    padding: 6px 12px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: "Poppins", sans-serif;
+}
+.search-button:hover{
+    background-color: var(--accent-color);
+}
+main{
+    padding-block:20px;
+    margin-top: 120px;
+}
+.cards-container{
+    justify-content: space-between;
+    flex-wrap: wrap;
+    row-gap: 20px;
+    align-items: start;
+}
+.card{
+    width: 360px;
+    min-height: 400px;
+    box-shadow: 0 0 4px c6c6c6;
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: #ffffff;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+.card:hover{
+    box-shadow:1px 1px 8px #c6c6c6 ;
+    background-color: rgba(240, 255, 255, 0.231);
+    transform: translateY(-2px);
+}
+.card-header img{
+    width: 100%;
+    height: 190px;
+    object-fit: cover;
+}
+.card-content{
+    padding: 16px;
+}
+.news-source{
+    margin-block: 12px;
+}
+.nav-item.active{
+    color: #b7b5e6;
+}
